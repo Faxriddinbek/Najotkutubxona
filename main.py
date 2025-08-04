@@ -214,6 +214,10 @@ class Genre:
 #
 # conn.commit()
 
-curr.execute("SELECT *FROM comments WHERE content IS NULL;")
+"""
+a_3 - misol
+"""
+
+curr.execute("SELECT count(country) FROM authors;")
 a = curr.fetchall()
 print(a)
